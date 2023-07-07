@@ -29,10 +29,17 @@
         </Button>
     </header>
     <section class="section1">
+        <video muted autoplay loop class="video" id="myVideo" src="./img/One Piece _ Avance oficial _ Netflix.mp4" type="video/mp4"></video>
         <div class="section1-txt">
             <p class="section1-txt-title">SERIES PELICULAS</p>
             <button class="section1-txt-button">COMPRAR</button>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById("myVideo");
+            video.play();
+            });
+    </script>
 </body>
 </html>
