@@ -94,7 +94,7 @@ body {
   justify-content: space-between;
   align-items: end;
   color: white;
-  box-shadow: inset -5em 4em 30px 20px rgb(0, 0, 0);
+  box-shadow: inset -4em 2em 30px 20px rgb(0, 0, 0);
 }
 .section1-txt-title {
   font-size: 1rem;
