@@ -50,23 +50,37 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 .header{
-    
-    margin: auto;
-    padding: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: $color-primario;
+    padding: 0.5rem 1rem;
     &-logo{
+        position: relative;
         color: white;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-img{
+            width: 20%;
+        }
+        &-txt{
+            display: inline-block;
+        }
     }
     &-list{
+        position: relative;
         display: none;
         gap: 1.5rem;
     }
     &-btnMenu{
-        background-color: #111111;
+        position: relative;
+        background-color: $color-primario;
         border-style: none;
-        color: #e509147a;
+        color: white;
     }
 }
 .section1{
@@ -90,11 +104,8 @@ body{
         align-items: end;
         color: white;
         box-shadow: inset -4em 2.5em 30px 20px rgb(0, 0, 0);
-        &-title{
-            font-size: 1rem;
-            width: 100%;
-            text-align: center;
-            margin-top: 1rem;
+        &-icon{
+            margin-right: 1rem;
         }
         &-button{
             margin-right: 1rem;
@@ -107,6 +118,7 @@ body{
             cursor: pointer;
             font-weight: bold;
             text-decoration: underline;
+            border-radius: 5px;
             &:hover{
                 opacity: 70%;
             }
@@ -114,15 +126,18 @@ body{
     }
 }
 .section2{
-    background-color: $color-primario;
+    background-color: #e5091485;
     display: flex;
     color: white;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
     font-weight: bold;
     margin: 0.5rem;
+    font-size: 0.8rem;
+    height: 15vh;
+    justify-content: space-around;
     &-title{
         text-decoration: underline;
     }
@@ -131,5 +146,8 @@ body{
         gap: 1rem;
         justify-content: space-around;
         align-items: center;
+    }
+    i{
+        font-size: 5rem;
     }
 }

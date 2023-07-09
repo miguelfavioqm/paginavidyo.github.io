@@ -54,23 +54,38 @@ body {
 }
 
 .header {
-  margin: auto;
-  padding: 1rem;
+  margin: 0rem 0rem 1rem 0rem;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #E50914;
+  padding: 0.5rem 1rem;
 }
 .header-logo {
+  position: relative;
   color: white;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-logo-img {
+  width: 20%;
+}
+.header-logo-txt {
+  display: inline-block;
 }
 .header-list {
+  position: relative;
   display: none;
   gap: 1.5rem;
 }
 .header-btnMenu {
-  background-color: #111111;
+  position: relative;
+  background-color: #E50914;
   border-style: none;
-  color: rgba(229, 9, 20, 0.4784313725);
+  color: white;
 }
 
 .section1 {
@@ -96,11 +111,8 @@ body {
   color: white;
   box-shadow: inset -4em 2.5em 30px 20px rgb(0, 0, 0);
 }
-.section1-txt-title {
-  font-size: 1rem;
-  width: 100%;
-  text-align: center;
-  margin-top: 1rem;
+.section1-txt-icon {
+  margin-right: 1rem;
 }
 .section1-txt-button {
   margin-right: 1rem;
@@ -113,21 +125,25 @@ body {
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
+  border-radius: 5px;
 }
 .section1-txt-button:hover {
   opacity: 70%;
 }
 
 .section2 {
-  background-color: #E50914;
+  background-color: rgba(229, 9, 20, 0.5215686275);
   display: flex;
   color: white;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
   font-weight: bold;
   margin: 0.5rem;
+  font-size: 0.8rem;
+  height: 15vh;
+  justify-content: space-around;
 }
 .section2-title {
   text-decoration: underline;
@@ -137,6 +153,9 @@ body {
   gap: 1rem;
   justify-content: space-around;
   align-items: center;
+}
+.section2 i {
+  font-size: 5rem;
 }
 
 /*# sourceMappingURL=output.css.map */
